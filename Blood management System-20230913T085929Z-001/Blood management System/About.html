@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration:none;
+        }
+        .sidebar{
+            position: fixed;
+            margin-top: 2px;
+            left: 2000px;
+            width: 200px;
+            height: 62%;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .sidebar header{
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            user-select: none;
+            border-radius: 10px;
+        }
+        .sidebar ul li{
+            display:block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            font-size: 20px;
+            color: white;
+            padding-left: 40px;
+            box-sizing: border-box;
+
+            transition: .4s;
+        }
+        #check{
+            display: none;
+        }
+        label #btn{
+            cursor: pointer;
+        }
+        #check:checked ~ .sidebar{
+            left: 85%;
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            left: 195px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: gray;
+        }
+        .mfont{
+            font-size: 38px;
+        }
+        .id1{
+                  background-color:black;
+                  border-radius: 100px;
+                  width: 60px;
+                  height: 60px;
+                  margin: auto;
+            }
+        #id2{
+                  background-color:black;
+                  border-radius: 100px;
+                  width: 60px;
+                  height: 60px;
+                  margin: auto;
+            }
+        #id3{
+                  background-color:black;
+                  border-radius: 100px;
+                  width: 60px;
+                  height: 60px;
+                  margin: auto;
+            }
+            .aicon{
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md bg-dark text-white rounded ">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand text-white">Blood Bank</a>
+                        <ul class="navbar-nav text-center ms-auto" >
+                            <li class="nav-item me-2">Welcome, Chiranth </li>
+                            <li class="nav-item me-2">&nbsp;&nbsp;&nbsp;&nbsp;<label for="check">
+                                <i class="fa-solid fa-bars" id="btn"></i>
+                            </label></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" name="" id="check"/>
+    <div class="sidebar">
+        <header class="text-dark"><div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="mt-2 mfont text-white">𝑴𝒆𝒏𝒖</h3>
+                </div>
+                <div class="col-md-2">
+                    <label for="check"><i class="fa-solid fa-xmark text-white" id="cancel"></i></label>
+                </div>
+            </header>
+        <ul>
+            <li><a href="Userhome.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="Requestblood.html"><i class="fa-solid fa-user"></i> Request Blood</a></li>
+            <li><a href="Viewrequest.html"><i class="fa-solid fa-users"></i> View Request</a></li>
+            <li><a href="Contact.html"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+            <li><a href="About.html"><i class="fa-brands fa-slack"></i> About</a></li>
+            <li><a href="Login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <div class="rounded">
+            <div class="row">
+                <div class="col-md-6" align="center">
+                        <img src="images/pngfind.com-blood-drops-png-782336.png" alt="About us image" width="55%" height="500x"/>
+                </div>
+                <div class="col-md-6 text-center">
+                    
+                        <h1 class="p-3">About Us</h1>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam repellendus maiores, praesentium quidem exercitationem iure quisquam eligendi explicabo deserunt aperiam quas voluptate, consequatur sapiente doloribus! Unde veniam animi quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem consectetur ex deleniti ea necessitatibus iusto minima beatae quasi eligendi iste repellat sunt blanditiis libero sequi enim, quis dolore debitis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nam quas harum aspernatur ea exercitationem, rem ipsum error velit fuga et dolore eos modi, nesciunt beatae laborum enim sit incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil veritatis quis delectus cum fuga quidem explicabo molestiae, saepe inventore labore at, eligendi est neque dicta repellat quaerat unde quasi! Labore! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nulla sint impedit quis iste molestias eum placeat autem? Nesciunt debitis dignissimos laborum adipisci molestias distinctio harum aspernatur illum odit fugiat?</p>
+                        <br>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-md-4 ">
+                                    <div class="id1">
+                                        <h2 class="p-2"><a href="https://www.facebook.com" class="aicon"><i class="fa-brands fa-facebook-f"></i></a></h2> 
+                                     </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="id2">
+                                         <h2 class="p-2"><a href="https://www.instagram.com/" class="aicon"><i class="fa-brands fa-square-instagram"></i></a></h2>  
+                                     </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="id3">
+                                        <h2 class="p-2"><a href="https://twitter.com/login" class="aicon"><i class="fa-brands fa-twitter"></i></a></h2>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
